@@ -15,8 +15,10 @@
     </title>
 </head>
 <body>
-
     <div id="header">
+        
+    </div>
+    <div id="navigation">
         <ul class="nav nav-pills">
             <li class="<?= $controller_name === "main" ? "active" : ""?>"><a href="/">Главная</a></li>
             <li class="<?= $controller_name === "about" ? "active" : ""?> dropdown">
