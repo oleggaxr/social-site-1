@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center;
+}
+#wrapper {
+    width: 800px;
+    margin: auto;
+}
+#navigation {
+    clear: left;
+}
+.logo {
+    float: left;
+    padding: 15px;
+}
+#header p {
+    margin: 10px;
+    width: 100px;
+    float: left;
+    text-align: justify;
+}
+#header .text {
+    vertical-align: middle;
+    font-size: 12pt;
+    font-weight: bold;
+}
+#header td {
+    padding-right: 20px;
+}
