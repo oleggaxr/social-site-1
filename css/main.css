@@ -12,7 +12,7 @@ body {
 #navigation {
     clear: left;
     border: 1px solid blue;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 .logo {
     float: left;
