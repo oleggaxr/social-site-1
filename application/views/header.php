@@ -7,9 +7,6 @@
     <!-- Bootstrap next 5 lines -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
 
     <title>
         <?= $title ?>
@@ -23,8 +20,7 @@
                 <td class="text"><p>При отделе Социального служения Казанской Епархии</p></td>
             </table>
         </div>
-        <div id="navigation">
-            <ul class="nav nav-pills">
+            <ul class="nav nav-pills" id="nav">
                 <li class="<?= $controller_name === "main" ? "active" : ""?>"><a href="/">Главная</a></li>
                 <li class="<?= $controller_name === "about" ? "active" : ""?> dropdown">
                     <a href="#" data-toggle="dropdown" class="dropdown-toggle">
@@ -99,4 +95,3 @@
                     <a href="/main/contact">Контакты</a>
                 </li>
             </ul>
-        </div>
