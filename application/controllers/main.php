@@ -12,6 +12,7 @@
 //				$this->load->library('form_validation');
                 $this->load->helper('html');
                 $this->load->view('header', $data);
+                $this->load->view('donations_panel_horizontal', $data);
 				$this->load->view('main_view', $data);
 
                 $this->load->view('footer');
