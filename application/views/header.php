@@ -7,13 +7,9 @@
     <!-- Bootstrap next 5 lines -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
-    
-=======
     <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
->>>>>>> 84406112c2d7bf8c07167b622d9c8cc4ecf18010
 
     <title>
         <?= $title ?>
@@ -27,6 +23,7 @@
                 <td class="text"><p>При отделе Социального служения Казанской Епархии</p></td>
 				<td>
 						<div style = "margin-left:200px;"><h3><p style = "color:#6CA6CD;font-size:25px;"><?php echo form_prep($this->session->userdata('prop_login')); ?></p></h3></div>
+<<<<<<< HEAD
 						<div style = "margin-left:200px;"><?php if($this->session->userdata('prop_login') == TRUE){?><a style = "text-decoration: none;color:black;color:#6CA6CD;" href = "<?php echo site_url("admin/admin_news");?>">Меню администратора</a><?php } ?></div>
 						<div style = "margin-left:200px;"><?php if($this->session->userdata('prop_login') == TRUE){?><a class = "destroy" style = "text-decoration: none;color:white;" href = "<?php echo site_url("main/logout");?>">Выйти</a><?php } ?></div>
 				</td>
@@ -34,13 +31,22 @@
 		
 			<div style = "margin-left:480px;"><?php if($this->session->userdata('prop_login') == FALSE){?><p><a href="#openModal" class = "downloadavatar" style = "color:#6CA6CD;">ВходДляАдминистратора</a></p><?php } ?></div>
 			
+=======
+						<div style = "margin-left:200px;"><?php if($this->session->userdata('prop_login') == TRUE){?><a style = "text-decoration: none;color:black;color:#6CA6CD;" href = "<?php echo site_url("admin/admin_news"); ?>">Меню администратора</a><?php }?></div>
+						<div style = "margin-left:200px;"><?php if($this->session->userdata('prop_login') == TRUE){?><a class = "destroy" style = "text-decoration: none;color:white;" href = "<?php echo site_url("main/logout"); ?>">Выйти</a><?php }?></div>
+				</td>
+            </table>
+
+			<div style = "margin-left:480px;"><?php if($this->session->userdata('prop_login') == FALSE){ ?><p><a href="#openModal" class = "downloadavatar" style = "color:#6CA6CD;">ВходДляАдминистратора</a></p><?php }?></div>
+
+>>>>>>> f4da946af66280b91c4b606f89b9bfae6eb79601
 			<div id="openModal" class="modalDialog">
 						<div>
 							<a href="#close" title="Закрыть" class="close">X</a>
 							<?php echo form_open('main/input_users'); ?>
 									Логин <input type = "text" name = "login"/><br>
 									Пароль <input type = "password" name = "password"/><br>
-									<input type = "submit" value = "Вход">	
+									<input type = "submit" value = "Вход">
 							<?php echo form_close();?>
 						</div>
 			</div>
