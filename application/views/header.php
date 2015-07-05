@@ -5,8 +5,9 @@
     <link href="/css/main.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="<?php echo base_url(); ?>css/header.css">
     <!-- Bootstrap next 5 lines -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
 
     <title>
         <?= $title ?>
@@ -31,8 +32,8 @@
 						<div>
 							<a href="#close" title="Закрыть" class="close">X</a>
 							<?echo form_open('main/input_users'); ?>
-									Логин <input type = "text" name = "login"/>
-									Пароль <input type = "password" name = "password"/>
+									Логин <input type = "text" name = "login"/><br>
+									Пароль <input type = "password" name = "password"/><br>
 									<input type = "submit" value = "Вход">	
 							<?echo form_close();?>
 						</div>
