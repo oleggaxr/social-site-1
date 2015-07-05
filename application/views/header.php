@@ -16,7 +16,7 @@
     <div id="wrapper">
         <div id="header">
             <table>
-            <tr/><td><img src="/images/logo.png" class="logo" height="218" width="218"></td>
+            <tr/><td><img src="/images/logo.png" class="logo" height="180" width="180"></td>
                 <td class="text"><p>При отделе Социального служения Казанской Епархии</p></td>
             </table>
         </div>
