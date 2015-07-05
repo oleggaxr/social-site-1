@@ -3,8 +3,6 @@
         width: 150px;
         float: right;
         text-align: justify;
-        margin-right: -620px;
-        width: 100%;
     }
     #donat table {
         width: 150px;
