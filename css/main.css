@@ -29,11 +29,14 @@ body {
 }
 #nav .active a {
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 /*------------------------------------*\
 	НАВИГАЦИЯ
 \*------------------------------------*/
 #nav{
+    border-radius: 10px;
     background-color: #FA58AC;
     float:left;
     width:100%;
@@ -47,6 +50,7 @@ body {
     display:block;
 }
 #nav li a{
+    border-radius: 10px;
     display:block;
     padding: 10px;
     padding-left: 15px;
