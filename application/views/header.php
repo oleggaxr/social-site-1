@@ -7,9 +7,6 @@
     <!-- Bootstrap next 5 lines -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
 
     <title>
         <?= $title ?>
@@ -19,7 +16,7 @@
     <div id="wrapper">
         <div id="header">
             <table>
-            <tr/><td><img src="/images/logo.png" class="logo" height="218" width="218"></td>
+            <tr/><td><img src="/images/logo.png" class="logo" height="180" width="180"></td>
                 <td class="text"><p>При отделе Социального служения Казанской Епархии</p></td>
 				<td>
 						<div style = "margin-left:200px;"><h3><p style = "color:#6CA6CD;font-size:25px;"><? echo form_prep($this->session->userdata('prop_login')); ?></p></h3></div>
@@ -41,8 +38,7 @@
 						</div>
 			</div>
         </div>
-        <div id="navigation">
-            <ul class="nav nav-pills">
+            <ul class="nav nav-pills" id="nav">
                 <li class="<?= $controller_name === "main" ? "active" : ""?>"><a href="/">Главная</a></li>
                 <li class="<?= $controller_name === "about" ? "active" : ""?> dropdown">
                     <a href="#" data-toggle="dropdown" class="dropdown-toggle">
@@ -117,4 +113,3 @@
                     <a href="/main/contact">Контакты</a>
                 </li>
             </ul>
-        </div>

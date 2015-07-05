@@ -10,6 +10,7 @@
             $data['controller_name'] = 'about';
 
             $this->load->view('header', $data);
+            $this->load->view('donations_panel_vertical', $data);
             $this->load->view('main_view', $data);
             $this->load->view('footer');
         }
@@ -21,6 +22,7 @@
             $data['controller_name'] = 'about';
 
             $this->load->view('header', $data);
+            $this->load->view('donations_panel_vertical', $data);
             $this->load->view('main_view', $data);
             $this->load->view('footer');
         }
@@ -31,6 +33,7 @@
             $data['controller_name'] = 'about';
 
             $this->load->view('header', $data);
+            $this->load->view('donations_panel_vertical', $data);
             $this->load->view('main_view', $data);
             $this->load->view('footer');
         }
