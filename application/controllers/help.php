@@ -6,7 +6,8 @@ class help extends CI_Controller
 
     public function where()
     {
-
+		$this->load->helper(array('form', 'url'));
+		$this->load->library('session');
         $data['title'] = self::$title_prefix . " | Куда обратиться за помощью";
         $data['controller_name'] = 'help';
 
@@ -17,7 +18,8 @@ class help extends CI_Controller
 
     public function todo()
     {
-
+		$this->load->helper(array('form', 'url'));
+		$this->load->library('session');
         $data['title'] = self::$title_prefix . " | Что делать в трудной ситуации";
         $data['controller_name'] = 'help';
 
@@ -27,7 +29,8 @@ class help extends CI_Controller
     }
     public function books()
     {
-
+		$this->load->helper(array('form', 'url'));
+		$this->load->library('session');
         $data['title'] = self::$title_prefix . " | Полезные книги";
         $data['controller_name'] = 'help';
 

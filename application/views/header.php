@@ -3,7 +3,7 @@
 <head>
     <meta content="text/html; charset=UTF-8" http-equiv="content-type">
     <link href="/css/main.css" rel="stylesheet" type="text/css" />
-
+	<link rel="stylesheet" type="text/css" media="screen" href="<?php echo base_url(); ?>css/header.css">
     <!-- Bootstrap next 5 lines -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,7 +21,25 @@
             <table>
             <tr/><td><img src="/images/logo.png" class="logo" height="218" width="218"></td>
                 <td class="text"><p>При отделе Социального служения Казанской Епархии</p></td>
+				<td>
+						<div style = "margin-left:200px;"><h3><p style = "color:#6CA6CD;font-size:25px;"><? echo form_prep($this->session->userdata('prop_login')); ?></p></h3></div>
+						<div style = "margin-left:200px;"><?if($this->session->userdata('prop_login') == TRUE){?><a style = "text-decoration: none;color:black;color:#6CA6CD;" href = "<? echo site_url("admin/admin_news");?>">Меню администратора</a><?}?></div>
+						<div style = "margin-left:200px;"><?if($this->session->userdata('prop_login') == TRUE){?><a style = "text-decoration: none;color:black;" href = "<? echo site_url("main/logout");?>">Выйти</a><?}?></div>
+				</td>
             </table>
+		
+			<div style = "margin-left:480px;"><?if($this->session->userdata('prop_login') == FALSE){?><p><a href="#openModal" class = "downloadavatar" style = "color:#6CA6CD;">ВходДляАдминистратора</a></p><?}?></div>
+			
+			<div id="openModal" class="modalDialog">
+						<div>
+							<a href="#close" title="Закрыть" class="close">X</a>
+							<?echo form_open('main/input_users'); ?>
+									Логин <input type = "text" name = "login"/>
+									Пароль <input type = "password" name = "password"/>
+									<input type = "submit" value = "Вход">	
+							<?echo form_close();?>
+						</div>
+			</div>
         </div>
         <div id="navigation">
             <ul class="nav nav-pills">

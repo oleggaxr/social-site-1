@@ -6,7 +6,7 @@ class projects extends CI_Controller
 
     public function cpm()
     {
-
+		
         $data['title'] = self::$title_prefix . " | Центр поддержки материнства";
         $data['controller_name'] = 'projects';
 
@@ -17,7 +17,8 @@ class projects extends CI_Controller
 
     public function volunteers()
     {
-
+		$this->load->helper(array('form', 'url'));
+		$this->load->library('session');
         $data['title'] = self::$title_prefix . " | Добровольцы";
         $data['controller_name'] = 'projects';
 
@@ -28,7 +29,8 @@ class projects extends CI_Controller
 
     public function sisterhood()
     {
-
+		$this->load->helper(array('form', 'url'));
+		$this->load->library('session');
         $data['title'] = self::$title_prefix . " | Сестричество";
         $data['controller_name'] = 'projects';
 
@@ -39,7 +41,8 @@ class projects extends CI_Controller
 
     public function soberness()
     {
-
+		$this->load->helper(array('form', 'url'));
+		$this->load->library('session');
         $data['title'] = self::$title_prefix . " | Трезвость";
         $data['controller_name'] = 'projects';
 

@@ -6,7 +6,8 @@ class reports extends CI_Controller
 
     public function financial()
     {
-
+		$this->load->helper(array('form', 'url'));
+		$this->load->library('session');
         $data['title'] = self::$title_prefix . " | Финансовые отчёты";
         $data['controller_name'] = 'reports';
 
@@ -16,7 +17,8 @@ class reports extends CI_Controller
     }
     public function helpto()
     {
-
+		$this->load->helper(array('form', 'url'));
+		$this->load->library('session');
         $data['title'] = self::$title_prefix . " | Кому помогли";
         $data['controller_name'] = 'reports';
 
@@ -26,7 +28,8 @@ class reports extends CI_Controller
     }
     public function helpfrom()
     {
-
+		$this->load->helper(array('form', 'url'));
+		$this->load->library('session');
         $data['title'] = self::$title_prefix . " | Кто помог";
         $data['controller_name'] = 'reports';
 

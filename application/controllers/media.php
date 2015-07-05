@@ -6,7 +6,8 @@ class media extends CI_Controller
 
     public function about()
     {
-
+		$this->load->helper(array('form', 'url'));
+		$this->load->library('session');
         $data['title'] = self::$title_prefix . " | СМИ о нас";
         $data['controller_name'] = 'media';
 
@@ -17,7 +18,8 @@ class media extends CI_Controller
 
     public function photo()
     {
-
+		$this->load->helper(array('form', 'url'));
+		$this->load->library('session');
         $data['title'] = self::$title_prefix . " | Фото";
         $data['controller_name'] = 'media';
 
@@ -28,7 +30,8 @@ class media extends CI_Controller
 
     public function video()
     {
-
+		$this->load->helper(array('form', 'url'));
+		$this->load->library('session');
         $data['title'] = self::$title_prefix . " | Видео";
         $data['controller_name'] = 'media';
 
@@ -39,7 +42,8 @@ class media extends CI_Controller
 
     public function results()
     {
-
+		$this->load->helper(array('form', 'url'));
+		$this->load->library('session');
         $data['title'] = self::$title_prefix . " | Работы подопечных";
         $data['controller_name'] = 'media';
 

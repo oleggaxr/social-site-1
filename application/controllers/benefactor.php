@@ -6,7 +6,8 @@ class benefactor extends CI_Controller
 
     public function to()
     {
-
+		$this->load->helper(array('form', 'url'));
+		$this->load->library('session');
         $data['title'] = self::$title_prefix . " | Пожертвовать";
         $data['controller_name'] = 'benefactor';
 
@@ -17,7 +18,8 @@ class benefactor extends CI_Controller
 
     public function from()
     {
-
+		$this->load->helper(array('form', 'url'));
+		$this->load->library('session');
         $data['title'] = self::$title_prefix . " | Попросить помощи";
         $data['controller_name'] = 'benefactor';
 
@@ -28,7 +30,8 @@ class benefactor extends CI_Controller
 
     public function be()
     {
-
+		$this->load->helper(array('form', 'url'));
+		$this->load->library('session');
         $data['title'] = self::$title_prefix . " | Стать добровольцем";
         $data['controller_name'] = 'benefactor';
 
@@ -38,8 +41,10 @@ class benefactor extends CI_Controller
     }
 
     public function pray()
-    {
-
+    {	
+		
+		$this->load->helper(array('form', 'url'));
+		$this->load->library('session');
         $data['title'] = self::$title_prefix . " | Помолиться";
         $data['controller_name'] = 'benefactor';
 
