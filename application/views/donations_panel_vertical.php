@@ -3,7 +3,7 @@
         width: 150px;
         float: right;
         text-align: justify;
-        margin-right: -600px;
+        margin-right: -620px;
         width: 100%;
     }
     #donat table {
@@ -15,10 +15,8 @@
         width: 150px;
     }
     #content {
+        margin-top: 50px;
         max-width: 550px;
-        float: left;
-        display: block;
-        margin: 25px;
     }
 </style>
 <div id="donat">
