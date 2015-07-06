@@ -28,7 +28,26 @@ body {
     font-weight: bold;
 }
 #header td {
-    //border: solid 1px #000000;
+    //border: 1px solid #000000;
+}
+#header .button {
+    padding: 5px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #FA58AC;
+    vertical-align: middle;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+#header .button a {
+    background-color: #FA58AC;
+    vertical-align: middle;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
 }
 #nav .active a {
     box-shadow: 0 0 5px rgba(0,0,0,0.5);

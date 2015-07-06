@@ -19,14 +19,14 @@
     <div id="wrapper">
         <div id="header">
             <table width="100%">
-            <tr/><td><img src="/images/logo.png" class="logo" height="180" width="180"></td>
+            <tr/><td width="190"><img src="/images/logo.png" class="logo" height="180" width="180"></td>
                 <td class="text"><p>При отделе Социального служения Казанской Епархии</p></td>
                 <td>
-                    <table width="200">
-                        <tr/><td><a href="/benefactor/to">Помочь</a></td>
-                        <tr/><td><span>Собрано: 1000000 руб.</span></td>
-                        <tr/><td><a href="/projects/volunteers">Добровольцы</a></td>
-                        <tr/><td><span>Помогают: 2000 человек</span></td>
+                    <table width="200" style="margin-top: 10px;">
+                        <tr/><td class="button"><a href="/benefactor/to">Помочь</a></td>
+                        <tr/><td height="40"><span>Собрано: 1000000 руб.</span></td>
+                        <tr/><td class="button"><a href="/projects/volunteers">Добровольцы</a></td>
+                        <tr/><td height="40"><span>Помогают: 2000 человек</span></td>
                     </table>
                 </td>
                 <td></td>
