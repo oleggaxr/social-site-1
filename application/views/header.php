@@ -22,14 +22,19 @@
             <tr/><td width="190"><img src="/images/logo.png" class="logo" height="180" width="180"></td>
                 <td class="text"><p>При отделе Социального служения Казанской Епархии</p></td>
                 <td>
-                    <table width="200" style="margin-top: 10px;">
+                    <table width="190" style="margin-top: 10px;">
                         <tr/><td class="button"><a href="/benefactor/to">Помочь</a></td>
                         <tr/><td height="40"><span>Собрано: 1000000 руб.</span></td>
                         <tr/><td class="button"><a href="/projects/volunteers">Добровольцы</a></td>
                         <tr/><td height="40"><span>Помогают: 2000 человек</span></td>
                     </table>
                 </td>
-                <td></td>
+                <td>
+                    <table width="190" style="margin-top: 10px;">
+                        <tr/><td height="40"><span>8 (987) 654-32-10</span></td>
+                        <tr/><td class="button"><a href="/benefactor/from">Попросить помощи</a></td>
+                    </table>
+                </td>
                 <?php
                 echo "<td style='text-align: right'>";
                 if ($this->session->userdata('prop_login') == TRUE) {
@@ -45,7 +50,7 @@
         </div>
             <ul id="nav">
                 <li class="<?= $controller_name === "main" ? "active" : ""?>"><a href="/">Главная</a></li>
-                <li class="<?= $controller_name === "about" ? "active" : ""?> dropdown">
+                <li class="<?= $controller_name === "about" ? "active" : ""?>">
                     <a href="#">
                         О нас
                         
