@@ -18,16 +18,23 @@
 <body>
     <div id="wrapper">
         <div id="header">
-            <table>
+            <table width="100%">
             <tr/><td><img src="/images/logo.png" class="logo" height="180" width="180"></td>
                 <td class="text"><p>При отделе Социального служения Казанской Епархии</p></td>
-                <td></td>
+                <td>
+                    <table width="200">
+                        <tr/><td><a href="/benefactor/to">Помочь</a></td>
+                        <tr/><td><span>Собрано: 1000000 руб.</span></td>
+                        <tr/><td><a href="/projects/volunteers">Добровольцы</a></td>
+                        <tr/><td><span>Помогают: 2000 человек</span></td>
+                    </table>
+                </td>
                 <td></td>
                 <?php
                 echo "<td style='text-align: right'>";
                 if ($this->session->userdata('prop_login') == TRUE) {
-                    echo "Вы вошли как <b>".$this->session->userdata('prop_login')."</b><br>";
-                    echo "<a href='/admin'>Панель администратора</a><br>";
+                    echo "Вы: <b>".$this->session->userdata('prop_login')."</b><br>";
+                    echo "<a href='/admin'>Консоль</a><br>";
                     echo "<a href='/admin/logout'>Выйти</a><br>";
                 } else {
                     echo "<a href='/admin/login'>Войти</a><br>";
