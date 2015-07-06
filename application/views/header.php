@@ -51,7 +51,7 @@
                 </li>
                 <li class="<?= $controller_name === "projects" ? "active" : ""?>">
                     <a href="#">
-                        Проекты
+                        Направления
                         
                     </a>
                     <ul>
@@ -67,6 +67,7 @@
                         
                     </a>
                     <ul>
+                        <li><a href="/reports/shares">Акции</a></li>
                         <li><a href="/reports/financial">Финансовые отчёты</a></li>
                         <li><a href="/reports/helpto">Кому помогли</a></li>
                         <li><a href="/reports/helpfrom">Кто помог</a></li>

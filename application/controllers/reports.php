@@ -38,4 +38,16 @@ class reports extends CI_Controller
         $this->load->view('footer');
     }
 
+    public function shares()
+    {
+        $this->load->helper(array('form', 'url'));
+        $this->load->library('session');
+        $data['title'] = self::$title_prefix . " | Акции";
+        $data['controller_name'] = 'reports';
+
+        $this->load->view('header', $data);
+        $this->load->view('main_view', $data);
+        $this->load->view('footer');
+    }
+
 }
