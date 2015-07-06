@@ -77,5 +77,13 @@
 				$this->session->sess_destroy();
 				redirect("main");
 			}
+			
+			
+			public function about_news()
+			{
+				$this->load->helper(array('form', 'url'));
+				$this->load->library('session');
+				$data2['query'] = $this->db->get('prop_news'); 
+			}
 	}
 ?>

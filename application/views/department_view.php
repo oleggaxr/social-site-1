@@ -3,7 +3,6 @@
 	Народные новости. А сейчас народные новости. Слушай радио! :D
 	<?php 
 	
-		$query = $this->db->get('prop_news');
 		foreach ($query->result() as $row)
 		{
 			//echo $row -> author;

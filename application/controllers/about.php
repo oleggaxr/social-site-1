@@ -8,10 +8,11 @@
 			$this->load->library('session');
             $data['title'] = self::$title_prefix." | Отдел";
             $data['controller_name'] = 'about';
-
+			$data['query'] = $this->db->query('SELECT id,prop_login,prop_text,prop_namenews FROM prop_news WHERE prop_categorynews = "Отдел"');	
+				
             $this->load->view('header', $data);
             $this->load->view('donations_panel_vertical', $data);
-            $this->load->view('main_view', $data);
+            $this->load->view('department_view', $data);
             $this->load->view('footer');
         }
 
