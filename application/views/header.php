@@ -80,6 +80,7 @@
                     </a>
                     <ul>
                         <li><a href="/benefactor/to">Пожертвовать</a></li>
+                        <li><a href="/benefactor/wishes">Просьбы о помощи</a></li>
                         <li><a href="/benefactor/from">Попросить помощи</a></li>
                         <li><a href="/benefactor/be">Стать добровольцем</a></li>
                         <li><a href="/benefactor/pray">Помолиться</a></li>
