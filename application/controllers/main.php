@@ -29,6 +29,7 @@
 
             $this->load->view('footer');
         }
+<<<<<<< HEAD
 		
 		public function input_users()
 		{	
@@ -85,5 +86,7 @@
 				$this->load->library('session');
 				$data2['query'] = $this->db->get('prop_news'); 
 			}
+=======
+>>>>>>> 20474568f72a6efe9f19905048b57ccd04088db2
 	}
 ?>

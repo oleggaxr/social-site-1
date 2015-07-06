@@ -3,7 +3,7 @@
 <head>
     <meta content="text/html; charset=UTF-8" http-equiv="content-type">
     <link href="/css/main.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="<?php echo base_url(); ?>css/header.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/header.css">
     <!-- Bootstrap next 5 lines -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,6 +21,7 @@
             <table>
             <tr/><td><img src="/images/logo.png" class="logo" height="180" width="180"></td>
                 <td class="text"><p>При отделе Социального служения Казанской Епархии</p></td>
+<<<<<<< HEAD
 				<td>
 						<div style = "margin-left:200px;"><h3><p style = "color:#6CA6CD;font-size:25px;"><?php echo form_prep($this->session->userdata('prop_login')); ?></p></h3></div>
 						<div style = "margin-left:200px;"><?php if($this->session->userdata('prop_login') == TRUE){?><a style = "text-decoration: none;color:black;color:#6CA6CD;" href = "<?php echo site_url("admin/admin_news");?>">Меню администратора</a><?php } ?></div>
@@ -38,6 +39,22 @@
 							<?php echo form_close();?>
 						</div>
 			</div>
+=======
+                <td></td>
+                <td></td>
+                <?php
+                echo "<td style='text-align: right'>";
+                if ($this->session->userdata('prop_login') == TRUE) {
+                    echo "Вы вошли как <b>".$this->session->userdata('prop_login')."</b><br>";
+                    echo "<a href='/admin'>Панель администратора</a><br>";
+                    echo "<a href='/admin/logout'>Выйти</a><br>";
+                } else {
+                    echo "<a href='/admin/login'>Войти</a><br>";
+                }
+                echo "</td>";
+                ?>
+            </table>
+>>>>>>> 20474568f72a6efe9f19905048b57ccd04088db2
         </div>
             <ul id="nav">
                 <li class="<?= $controller_name === "main" ? "active" : ""?>"><a href="/">Главная</a></li>
@@ -54,7 +71,7 @@
                 </li>
                 <li class="<?= $controller_name === "projects" ? "active" : ""?>">
                     <a href="#">
-                        Проекты
+                        Направления
                         
                     </a>
                     <ul>
@@ -70,6 +87,7 @@
                         
                     </a>
                     <ul>
+                        <li><a href="/reports/shares">Акции</a></li>
                         <li><a href="/reports/financial">Финансовые отчёты</a></li>
                         <li><a href="/reports/helpto">Кому помогли</a></li>
                         <li><a href="/reports/helpfrom">Кто помог</a></li>
@@ -82,6 +100,7 @@
                     </a>
                     <ul>
                         <li><a href="/benefactor/to">Пожертвовать</a></li>
+                        <li><a href="/benefactor/wishes">Просьбы о помощи</a></li>
                         <li><a href="/benefactor/from">Попросить помощи</a></li>
                         <li><a href="/benefactor/be">Стать добровольцем</a></li>
                         <li><a href="/benefactor/pray">Помолиться</a></li>

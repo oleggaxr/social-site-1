@@ -52,4 +52,17 @@ class benefactor extends CI_Controller
         $this->load->view('main_view', $data);
         $this->load->view('footer');
     }
+
+    public function wishes()
+    {
+
+        $this->load->helper(array('form', 'url'));
+        $this->load->library('session');
+        $data['title'] = self::$title_prefix . " | Просьбы о помощи";
+        $data['controller_name'] = 'benefactor';
+
+        $this->load->view('header', $data);
+        $this->load->view('main_view', $data);
+        $this->load->view('footer');
+    }
 }
