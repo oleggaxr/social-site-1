@@ -9,12 +9,7 @@ class admin extends CI_Controller
 
         $this->load->helper(array('form', 'url'));
         $this->load->library('session');
-        $users = $this->session->userdata('prop_login');
-		
-		
-		
-		
-        if($users != "admin")
+        $users = $this->session->userdata('prop_login');if($users != "admin")
         {
             redirect("admin/login");
         }
@@ -38,7 +33,7 @@ class admin extends CI_Controller
                     'logged_in' => TRUE
                 );
                 $login = htmlspecialchars($this->input->post('login'));
-                $password = $this->input->post('password');
+                $password = md5($this->input->post('password'));
                 $query = $this->db->query("SELECT id FROM prop_users WHERE prop_login='".$this->db->escape_str($login)."'AND prop_password='".$this->db->escape_str($password)."'");
                 $proverka = $query->num_rows();
                 if(empty($proverka)) {
@@ -47,7 +42,7 @@ class admin extends CI_Controller
 //                    exit;
                 } else {
                     $this->session->set_userdata($newdata);
-                    redirect('main');
+                    redirect('admin');
                 }
             } else {
                 $this->load->view('admin/login');

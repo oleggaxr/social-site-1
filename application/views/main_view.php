@@ -19,10 +19,11 @@
 						//$this->db->select(('prop_text', 1, 30), 'prop_namenews','prop');
 						//$query = $this->db->get('prop_news'); 
 						foreach ($query->result() as $row)
-						{ 
+						{
+                            echo "<div class='news'>";
 							echo "<font style = ';font:18px Arial, Helvetica, sans-serif;'>".$row -> prop_namenews."</font><br><br>";
 							echo "<img style = 'width:600px;height:400px;' src = '".base_url().'images/'.$row->prop_images."'><br><br>";
-						
+
 					?>
 				</td>
 			</tr>
@@ -32,6 +33,7 @@
 					
 						echo $row->prop_text."<br><br>";
 						echo "<a href = ".site_url('main/allnews').">Подробно</a><br><br>";
+                        echo "</div>";
 					}
 					?>
 				</td>
