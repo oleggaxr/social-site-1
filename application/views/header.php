@@ -18,9 +18,10 @@
 <body>
     <div id="wrapper">
         <div id="header">
-            <table>
-            <tr/><td><img src="/images/logo.png" class="logo" height="180" width="180"></td>
+            <table width="100%">
+            <tr/><td width="190"><img src="/images/logo.png" class="logo" height="180" width="180"></td>
                 <td class="text"><p>При отделе Социального служения Казанской Епархии</p></td>
+<<<<<<< HEAD
 				<td>
 						<div style = "margin-left:200px;"><h3><p style = "color:#6CA6CD;font-size:25px;"><?php echo form_prep($this->session->userdata('prop_login')); ?></p></h3></div>
 						<div style = "margin-left:200px;"><?php if($this->session->userdata('prop_login') == TRUE){?><a style = "text-decoration: none;color:black;color:#6CA6CD;" href = "<?php echo site_url("admin/admin_news");?>">Меню администратора</a><?php } ?></div>
@@ -40,11 +41,27 @@
 			</div>
                 <td></td>
                 <td></td>
+=======
+                <td>
+                    <table width="190" style="margin-top: 10px;">
+                        <tr/><td class="button"><a href="/benefactor/to">Помочь</a></td>
+                        <tr/><td height="40"><span>Собрано: 1000000 руб.</span></td>
+                        <tr/><td class="button"><a href="/projects/volunteers">Добровольцы</a></td>
+                        <tr/><td height="40"><span>Помогают: 2000 человек</span></td>
+                    </table>
+                </td>
+                <td>
+                    <table width="190" style="margin-top: 10px;">
+                        <tr/><td height="40"><span>8 (987) 654-32-10</span></td>
+                        <tr/><td class="button"><a href="/benefactor/from">Попросить помощи</a></td>
+                    </table>
+                </td>
+>>>>>>> c4793cffc9e066d6086624699ebaa7bc317ba636
                 <?php
                 echo "<td style='text-align: right'>";
                 if ($this->session->userdata('prop_login') == TRUE) {
-                    echo "Вы вошли как <b>".$this->session->userdata('prop_login')."</b><br>";
-                    echo "<a href='/admin'>Панель администратора</a><br>";
+                    echo "Вы: <b>".$this->session->userdata('prop_login')."</b><br>";
+                    echo "<a href='/admin'>Консоль</a><br>";
                     echo "<a href='/admin/logout'>Выйти</a><br>";
                 } else {
                     echo "<a href='/admin/login'>Войти</a><br>";
@@ -55,7 +72,7 @@
         </div>
             <ul id="nav">
                 <li class="<?= $controller_name === "main" ? "active" : ""?>"><a href="/">Главная</a></li>
-                <li class="<?= $controller_name === "about" ? "active" : ""?> dropdown">
+                <li class="<?= $controller_name === "about" ? "active" : ""?>">
                     <a href="#">
                         О нас
                         
