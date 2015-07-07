@@ -21,7 +21,6 @@
             <table>
             <tr/><td><img src="/images/logo.png" class="logo" height="180" width="180"></td>
                 <td class="text"><p>При отделе Социального служения Казанской Епархии</p></td>
-<<<<<<< HEAD
 				<td>
 						<div style = "margin-left:200px;"><h3><p style = "color:#6CA6CD;font-size:25px;"><?php echo form_prep($this->session->userdata('prop_login')); ?></p></h3></div>
 						<div style = "margin-left:200px;"><?php if($this->session->userdata('prop_login') == TRUE){?><a style = "text-decoration: none;color:black;color:#6CA6CD;" href = "<?php echo site_url("admin/admin_news");?>">Меню администратора</a><?php } ?></div>
@@ -39,7 +38,6 @@
 							<?php echo form_close();?>
 						</div>
 			</div>
-=======
                 <td></td>
                 <td></td>
                 <?php
@@ -54,7 +52,6 @@
                 echo "</td>";
                 ?>
             </table>
->>>>>>> 20474568f72a6efe9f19905048b57ccd04088db2
         </div>
             <ul id="nav">
                 <li class="<?= $controller_name === "main" ? "active" : ""?>"><a href="/">Главная</a></li>

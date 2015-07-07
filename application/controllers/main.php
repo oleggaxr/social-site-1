@@ -13,6 +13,8 @@
                 $this->load->helper('html');
                 $this->load->view('header', $data);
                 $this->load->view('donations_panel_horizontal', $data);
+				//$this->db->select("('prop_text', 1, 30) as `prop_text`, 'prop_namenews,prop_images,prop_login,prop_date ");
+				$data['query'] = $this->db->query("SELECT SUBSTRING(prop_text, 1, 50) AS prop_text,prop_namenews,prop_images,prop_login,prop_date,id FROM prop_news");
 				$this->load->view('main_view', $data);
 
                 $this->load->view('footer');
@@ -29,7 +31,6 @@
 
             $this->load->view('footer');
         }
-<<<<<<< HEAD
 		
 		public function input_users()
 		{	
@@ -84,9 +85,14 @@
 			{
 				$this->load->helper(array('form', 'url'));
 				$this->load->library('session');
-				$data2['query'] = $this->db->get('prop_news'); 
+				//$data2['query'] = $this->db->get('prop_news'); 
 			}
-=======
->>>>>>> 20474568f72a6efe9f19905048b57ccd04088db2
+			
+		public function allnews($id = '')
+		{
+			$this->load->helper(array('form', 'url'));
+			$this->load->library('session');
+			
+		}
 	}
 ?>
