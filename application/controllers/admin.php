@@ -72,7 +72,7 @@ class admin extends CI_Controller
 			$shares = $this->input->post('shares');
 			$directions = $this->input->post('directions');
 			$who_help = $this->input->post('who_help');
-			$images = $this->input->post('userfile');
+			$images = $this->input->post('upload');
 			$login = $this->session->userdata('prop_login');
 			$date = date("d.m.y"); 
 			$newdata = array(
@@ -85,8 +85,31 @@ class admin extends CI_Controller
 						   'prop_date' =>  $date,
 					   );
 					   
+			//$config['file_name'] = $images;
+			$config['upload_path'] = './images/';
+			$config['allowed_types'] = 'gif|jpg|png';
+			$config['max_size']	= '2048';
+			//$config['max_width'] = '1024';
+			//$config['max_height'] = '768';
+		
+			//$submit = $this->input->post('download');
+			//$submits = $this->input->post('userfile');
+				
+				$this->load->library('upload', $config);
+				
+				if ( ! $this->upload->do_upload('upload'))
+				{
+					echo "aaaa";
+				}	
+				else
+				{
+					$file_data = $this->upload->data();
+				}		   
+					   
+			
+					   
 			$this->db->insert('prop_news',$newdata);
-			redirect('addimages');
+			redirect('admin');
 		}
 		
 		function deletenews($id = '')

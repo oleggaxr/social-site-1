@@ -3,7 +3,7 @@
 </head>
 <h1>Ураааа! Админка заработала!</h1>
 <div id="content">
-<?php echo form_open('admin/addnews'); ?>
+<?php echo form_open_multipart('admin/addnews'); ?>
 	<table>
 		<tr>
 			<td>
@@ -26,7 +26,7 @@
 		<tr>
 			<td>
 				<!--<p style = "margin-top:10px;"><a href="#openModal" class = "downloadavatar" style = "color:#6CA6CD;">Загрузить картинку</a></p>-->
-					
+					<input type="file" name = "upload">
 						
 			</td>
 		</tr>
@@ -49,30 +49,7 @@
 	<input type = "submit" value = "Доавить статью" style = "margin-top:10px;"/>
 	
 	<?php echo form_close(); ?>	
-					<?php echo form_open_multipart('admin/addimages');?>
-
-				<input type="file" name="userfile" size="20" />
-
-				<br /><br />
-
-				<input type="submit" value="upload" />
-
-				</form>
-					<?php echo form_open('admin/addimage'); ?>
-						<div id="openModal" class="modalDialog">
-							<div>
-								<a href="#close" title="Закрыть" class="close">X</a>
-									<?php echo form_open_multipart('admin_news');?>
-										<input type="file" name="userfile" size="20" />
-										<br /><br />
-
-										<input type="submit" name = "download" value="upload" />
-
-										</form>
-							</div>
-						</div>
-					<?php echo form_close(); ?>	
-		
+				
 		<div style = "margin-top:50px;">
 				<table>
 					<tr>
