@@ -72,3 +72,13 @@
 #panel table {
     width: 100%;
 }
+#panel ul {
+    list-style-type: none;
+}
+.news {
+    margin: 20px;
+    padding: 10px;
+    -webkit-box-shadow: inset 0px 0px 24px 8px rgba(193,191,255,0.55);
+    -moz-box-shadow: inset 0px 0px 24px 8px rgba(193,191,255,0.55);
+    box-shadow: inset 0px 0px 24px 8px rgba(193,191,255,0.55);
+}
