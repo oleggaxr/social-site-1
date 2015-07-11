@@ -49,14 +49,50 @@ body {
     color: #ffffff;
     text-decoration: none;
 }
+.donat {
+    border-radius: 15px;
+    text-align: center;
+    height: 170px;
+    width: 170px;
+    -webkit-box-shadow: 0px 0px 32px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 32px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 32px -6px rgba(0,0,0,0.75);
+}
+/*------------------------------------*\
+	Новости
+\*------------------------------------*/
+.news {
+    margin-bottom: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 32px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 32px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 32px -6px rgba(0,0,0,0.75);
+}
+.news td {
+    text-align: justify;
+    padding: 5px 15px;
+}
+.news h3 {
+    font-size: 13pt;
+}
+.news .date{
+    font-size: 10pt;
+    color: #888888;
+    font-style: italic;
+}
+.news p {
+
+    font-size: 11pt;
+}
+
+/*------------------------------------*\
+	НАВИГАЦИЯ
+\*------------------------------------*/
 #nav .active a {
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
     -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
     -moz-box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
-/*------------------------------------*\
-	НАВИГАЦИЯ
-\*------------------------------------*/
 #nav{
     border-radius: 10px;
     background-color: #FA58AC;
@@ -111,7 +147,7 @@ body {
 }
 #nav li:hover a{ /* Устанавливаем стили для верхнего уровня, когда выводится выпадающий список */
     background:#6b0c36;
-    background:rgba(107,12,54,0.90v); /* Выглядит полупрозрачным */
+    background:rgba(107,12,54,0.90); /* Выглядит полупрозрачным */
 }
 #nav li:hover ul a{ /* Изменяем некоторые стили верхнего уровня при выводе выпадающего пункта */
     text-decoration:none;
