@@ -1,11 +1,16 @@
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" media="screen" href="/css/header.css">
-    </head>
-    <body>
-    <h1>Ураааа! Админка заработала!</h1>
-
-    <div id="content">
+<head>
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/admin.css">
+</head>
+<body>
+<div id="content">
+    <ul id="navbar">
+            <li class="left_button active"><a href="#">Новости</a></li>
+            <li><a href="#1">Просьбы о помощи</a></li>
+            <li><a href="#3">Добровольцы</a></li>
+            <li class="rigth_button"><a href="#2">Пока пусто</a></li>
+    </ul>
+    <div id="panel">
         <?php echo form_open_multipart('admin/addnews'); ?>
         <table>
             <tr>
@@ -82,5 +87,6 @@
 
         <a href="/">Вернуться на главную</a>
     </div>
-    </body>
+</div>
+</body>
 </html>
