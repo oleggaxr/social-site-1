@@ -5,10 +5,10 @@
 <body>
 <div id="content">
     <ul id="navbar">
-            <li class="left_button active"><a href="#">Новости</a></li>
-            <li><a href="#1">Просьбы о помощи</a></li>
-            <li><a href="#3">Добровольцы</a></li>
-            <li class="rigth_button"><a href="#2">Пока пусто</a></li>
+        <li class="left_button active"><a href="#">Новости</a></li>
+        <li><a href="#1">Просьбы о помощи</a></li>
+        <li><a href="#3">Добровольцы</a></li>
+        <li class="rigth_button"><a href="#2">Пока пусто</a></li>
     </ul>
     <div id="panel">
         <?php echo form_open_multipart('admin/addnews'); ?>
@@ -17,12 +17,6 @@
                 <td>
                     <p>Название статьи</p>
                     <textarea name="namenews"></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Краткое описание статьи</p>
-                    <textarea name="shortnews"></textarea>
                 </td>
             </tr>
             <tr>
@@ -58,35 +52,35 @@
 
         <?php echo form_close(); ?>
 
-        <div style="margin-top:50px;">
-            <table>
-                <tr>
-                    <td>
-                        <?php
-                        //$this->db->select(('prop_text', 1, 30), 'prop_namenews','prop');
-                        $query = $this->db->get('prop_news');
-                        foreach ($query->result() as $row)
-                        {
-                        echo "<font style = ';font:18px Arial, Helvetica, sans-serif;'>" . $row->prop_namenews . "</font><br><br>";
-                        echo "<img style = 'width:600px;height:400px;' src = '" . base_url() . 'images/' . $row->prop_images . "'><br><br>";
-
-                        ?>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <?php
-
-                        echo $row->prop_text . "<br><br>";
-                        }
-                        ?>
-                    </td>
-                </tr>
-            </table>
-        </div>
-
-        <a href="/">Вернуться на главную</a>
     </div>
+    <div style="margin-top:50px;">
+        <table>
+            <tr>
+                <td>
+                    <?php
+                    //$this->db->select(('prop_text', 1, 30), 'prop_namenews','prop');
+                    $query = $this->db->get('prop_news');
+                    foreach ($query->result() as $row)
+                    {
+                    echo "<font style = ';font:18px Arial, Helvetica, sans-serif;'>" . $row->prop_namenews . "</font><br><br>";
+                    echo "<img style = 'width:600px;height:400px;' src = '" . base_url() . 'images/' . $row->prop_images . "'><br><br>";
+
+                    ?>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <?php
+
+                    echo $row->prop_text . "<br><br>";
+                    }
+                    ?>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <a href="/">Вернуться на главную</a>
 </div>
 </body>
 </html>

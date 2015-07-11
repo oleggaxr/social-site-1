@@ -19,8 +19,11 @@
     height: 50px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    background-color: grey;
+    background-color: #d6d6d6;
 }
+/*
+    Навигационная панель
+*/
 #navbar li{
     text-align: center;
     width: 24.9%;
@@ -29,6 +32,7 @@
     position:relative;
     display:block;
     border-right: solid 1px #000000;
+    font-size: 17pt;
 }
 #navbar .left_button {
     border-top-left-radius: 30px;
@@ -45,9 +49,16 @@
     border-radius: 10px;
     display:block;
     padding: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
     color: #000000;
     text-decoration:none;
     height: 100%;
+}
+/*
+    Панель добавления новостей
+*/
+#panel {
+    margin: 15px;
+}
+#panel table {
+    width: 100%;
 }
