@@ -49,12 +49,36 @@ body {
     color: #ffffff;
     text-decoration: none;
 }
-
+.donat {
+    border-radius: 15px;
+    text-align: center;
+    height: 170px;
+    width: 170px;
+    -webkit-box-shadow: 0px 0px 32px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 32px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 32px -6px rgba(0,0,0,0.75);
+}
 /*------------------------------------*\
 	Новости
 \*------------------------------------*/
 .news {
-    border: 1px solid #000000;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 32px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 32px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 32px -6px rgba(0,0,0,0.75);
+}
+.news td {
+    text-align: justify;
+    padding: 5px 15px;
+}
+.news h3 {
+    font-size: 13pt;
+}
+.news .date{
+    font-size: 10pt;
+    color: #888888;
+    font-style: italic;
 }
 
 /*------------------------------------*\
