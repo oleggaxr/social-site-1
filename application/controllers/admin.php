@@ -15,7 +15,10 @@ class admin extends CI_Controller
         }
         else
         {
+            $data['section'] = "news";
+            $this->load->view('admin/header', $data);
             $this->load->view('admin/news_view');
+            $this->load->view('admin/footer');
         }
     }
     function login() {
@@ -117,8 +120,39 @@ class admin extends CI_Controller
 					1) Доавить кнопку или ссылку, а потом создать форму и перекидывать сюда.
 				*/
 		}
-		
-		
+		function donations() {
+            $this->load->helper(array('form', 'url'));
+            $this->load->library('session');
+            $users = $this->session->userdata('prop_login');if($users != "admin")
+            {
+                redirect("admin/login");
+            }
+            else
+            {
+                $data['section'] = "donations";
+                $this->load->view('admin/header', $data);
+                $this->load->view('admin/news_view');
+                $this->load->view('admin/footer');
+            }
+        }
+    function volunteers() {
+        $this->load->helper(array('form', 'url'));
+        $this->load->library('session');
+        $users = $this->session->userdata('prop_login');if($users != "admin")
+        {
+            redirect("admin/login");
+        }
+        else
+        {
+            $data['section'] = "volunteers";
+            $this->load->view('admin/header', $data);
+            $this->load->view('admin/news_view');
+            $this->load->view('admin/footer');
+        }
+    }
+	function news() {
+        self::index();
+    }
 				
 		
 		
