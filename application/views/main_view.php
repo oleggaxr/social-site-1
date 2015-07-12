@@ -21,7 +21,7 @@
                 <tr/>
                 <td><img height="100" width="140" src="<?= base_url() . 'images/' . $row->prop_images ?>"></td>
                 <td>
-                    <h3><a href="#"><?= $row->prop_namenews ?></a></h3>
+                    <h3><a href = "<? echo base_url('watchnews/watch/'.$row->id)?>"><?= $row->prop_namenews ?></a></h3>
                     <span class="date"><?= $row->prop_date ?></span>
                     <p><?= $row->prop_text ?></p>
                 </td>

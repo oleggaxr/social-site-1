@@ -10,7 +10,7 @@ class admin extends CI_Controller
         $this->load->helper(array('form', 'url'));
         $this->load->library('session');
         $users = $this->session->userdata('prop_login');
-        if($users != "admin")
+		if($users != "admin")
         {
             redirect("admin/login");
         }
@@ -18,7 +18,6 @@ class admin extends CI_Controller
         {
             $data['section'] = "news";
             $this->load->view('admin/header', $data);
-            $this->load->view('admin/news_add');
             $this->load->view('admin/news_view');
             $this->load->view('admin/footer');
         }
@@ -38,7 +37,7 @@ class admin extends CI_Controller
                     'logged_in' => TRUE
                 );
                 $login = htmlspecialchars($this->input->post('login'));
-                $password = md5($this->input->post('password'));
+                $password = $this->input->post('password');
                 $query = $this->db->query("SELECT id FROM prop_users WHERE prop_login='".$this->db->escape_str($login)."'AND prop_password='".$this->db->escape_str($password)."'");
                 $proverka = $query->num_rows();
                 if(empty($proverka)) {
@@ -94,7 +93,6 @@ class admin extends CI_Controller
 			$namenews = $this->input->post('namenews');
 			$shortnews = $this->input->post('shortnews');
 			$textnews = $this->input->post('textnews');
-<<<<<<< HEAD
 			
 			$shares = $this->input->post('shares');
 			$directions = $this->input->post('directions');
@@ -115,23 +113,6 @@ class admin extends CI_Controller
 						   'prop_categorynews' => $smi,
 						   'prop_categorynews' => $photo,
 						   'prop_categorynews' => $video,
-=======
-			
-			$shares = $this->input->post('shares');
-			$directions = $this->input->post('directions');
-			$who_help = $this->input->post('who_help');
-			$who_help_one = $this->input->post('who_help_one');
-			$smi = $this->input->post('smi');
-			$photo = $this->input->post('photo');
-			$video = $this->input->post('video');
-			
-			//$images = $this->input->post('upload');
-			$login = $this->session->userdata('prop_login');
-			$date = date("d.m.y"); 
-			$newdata = array(
-						   'prop_categorynews' => $shares,
-						   'prop_categorynews' => $directions,
->>>>>>> 04ee67479823d1a33ebd2a1688cafda89ce2b8fb
 						   'prop_namenews' =>  $namenews,
 						   'prop_images' =>  $images,
 						   'prop_login' =>  $login,
@@ -142,18 +123,7 @@ class admin extends CI_Controller
 			$this->db->insert('prop_news',$newdata);
 			redirect('admin');
 		}
-<<<<<<< HEAD
 		
-=======
-		function newsdelete($id = '')
-		{
-			$this-> load-> helper('url');
-                $this-> load-> helper('form');
-				$this->load->library('session');
-            $this->db->delete('prop_news', array('id' => $id));
-            redirect("/admin");
-		}
->>>>>>> 04ee67479823d1a33ebd2a1688cafda89ce2b8fb
 		function donations() {
             $this->load->helper(array('form', 'url'));
             $this->load->library('session');
@@ -184,11 +154,18 @@ class admin extends CI_Controller
             $this->load->view('admin/footer');
         }
     }
-	function news() {
+	function news()
+	{
         self::index();
-    }
 		
-<<<<<<< HEAD
+    }
+	
+		function delete($id = "")
+		{
+			$this->db->delete('prop_news', array('id' => $id)); 
+			redirect('admin');
+		}
+		
 		function newsupdate($id = "")
 		{
 					$all = $this->input->post('textnews');
@@ -199,27 +176,8 @@ class admin extends CI_Controller
 					$this->db->update('prop_news', $data, array('id' => $id));
 					redirect('admin');
 		}
-=======
-    function newsupdate($id = "")
-    {
-        /* $a = $this->db->get('comments'); // получам комментарии из БД
-        foreach ($a->result() as $row)
-        {*/
-
-
-        $all = $this->input->post('textnews');
-
-        var_dump($all);
-        exit;
-
-        $data = array(
-            'body' => $all
-        );
-        //var_dump($a);
-        //exit;
-        $this->db->update('prop_news', $data, array('id' => $id));
-        redirect('admin');
-    }
->>>>>>> 04ee67479823d1a33ebd2a1688cafda89ce2b8fb
+		
+		
+		
 }
 ?>

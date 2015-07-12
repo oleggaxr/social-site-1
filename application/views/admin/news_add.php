@@ -38,12 +38,8 @@
                 <h3>Выберите категорию статьи</h3>
                 <ul list-style-type="none">
                     <li/><input type="checkbox" name="shares" value="Акции">Акции
-                    <li/><input type="checkbox" name="directions" value="Направления">Направления
-                    <li/><input type="checkbox" name="who_help" value="Кому помогли">Кому помогли
-                    <li/><input type="checkbox" name="who_help_one" value="Кто помог">Кто помог
-                    <li/><input type="checkbox" name="smi" value="СМИ">СМИ
-                    <li/><input type="checkbox" name="photo" value="Фото">Фото
-                    <li/><input type="checkbox" name="video" value="Видео">Видео
+                    <li/><input type="checkbox" name="directions" value="a2">Направления
+                    <li/><input type="checkbox" name="who_help" value="a2">Кому помогли
                 </ul>
             </td>
         </tr>
@@ -54,6 +50,11 @@
             </td>
         </tr>
     </table>
+
+    <script type="text/javascript" src="/plupload-2.1.7/js/plupload.full.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/plupload-2.1.7/js/jquery.plupload.queue/jquery.plupload.queue.min.js" charset="UTF-8"></script>
+    <link type="text/css" rel="stylesheet" href="/plupload-2.1.7/js/jquery.plupload.queue/css/jquery.plupload.queue.css" media="screen" />
+
     <h3>Загрузка фотографий</h3>
     <input type="submit" value="Доавить статью" style="margin-top:10px;"/>
 
