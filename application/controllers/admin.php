@@ -119,9 +119,6 @@ class admin extends CI_Controller
 			$this->db->insert('prop_news',$newdata);
 			redirect('admin');
 		}
-		
-<<<<<<< HEAD
-=======
 		function newsdelete($id = '')
 		{
 			$this-> load-> helper('url');
@@ -130,7 +127,6 @@ class admin extends CI_Controller
             $this->db->delete('prop_news', array('id' => $id));
             redirect("/admin");
 		}
->>>>>>> 94c3d7c0f3a7ad213b692086e2a35ed6500d231a
 		function donations() {
             $this->load->helper(array('form', 'url'));
             $this->load->library('session');

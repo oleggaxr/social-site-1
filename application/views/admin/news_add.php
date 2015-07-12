@@ -38,8 +38,12 @@
                 <h3>Выберите категорию статьи</h3>
                 <ul list-style-type="none">
                     <li/><input type="checkbox" name="shares" value="Акции">Акции
-                    <li/><input type="checkbox" name="directions" value="a2">Направления
-                    <li/><input type="checkbox" name="who_help" value="a2">Кому помогли
+                    <li/><input type="checkbox" name="directions" value="Направления">Направления
+                    <li/><input type="checkbox" name="who_help" value="Кому помогли">Кому помогли
+                    <li/><input type="checkbox" name="who_help_one" value="Кто помог">Кто помог
+                    <li/><input type="checkbox" name="smi" value="СМИ">СМИ
+                    <li/><input type="checkbox" name="photo" value="Фото">Фото
+                    <li/><input type="checkbox" name="video" value="Видео">Видео
                 </ul>
             </td>
         </tr>
