@@ -64,27 +64,11 @@ class admin extends CI_Controller
 			$this-> load-> helper('url');
                 $this-> load-> helper('form');
 				$this->load->library('session');
-		
-			$namenews = $this->input->post('namenews');
-			$shortnews = $this->input->post('shortnews');
-			$textnews = $this->input->post('textnews');
-			$shares = $this->input->post('shares');
-			$directions = $this->input->post('directions');
-			$who_help = $this->input->post('who_help');
+		//$config['file_name'] = $this->input->post('upload');
+			
 			$images = $this->input->post('upload');
-			$login = $this->session->userdata('prop_login');
-			$date = date("d.m.y"); 
-			$newdata = array(
-						   'prop_categorynews' => $shares,
-						   'prop_namenews' =>  $namenews,
-						   'prop_shortnews' =>  $shortnews,
-						   'prop_images' =>  $images,
-						   'prop_login' =>  $login,
-						   'prop_text' =>  $textnews,
-						   'prop_date' =>  $date,
-					   );
-					   
-			//$config['file_name'] = $images;
+			
+			$config['file_name'] = $this->input->post('upload');
 			$config['upload_path'] = './images/';
 			$config['allowed_types'] = 'gif|jpg|png';
 			$config['max_size']	= '2048';
@@ -96,31 +80,45 @@ class admin extends CI_Controller
 				
 				$this->load->library('upload', $config);
 				
-				if ( ! $this->upload->do_upload('upload'))
+				if ( !$this->upload->do_upload('upload'))
 				{
 					echo "aaaa";
+					exit;
 				}	
 				else
 				{
 					$file_data = $this->upload->data();
-				}		   
-					   
+				}
 			
+			$namenews = $this->input->post('namenews');
+			$shortnews = $this->input->post('shortnews');
+			$textnews = $this->input->post('textnews');
+			
+			$shares = $this->input->post('shares');
+			$directions = $this->input->post('directions');
+			$who_help = $this->input->post('who_help');
+			$who_help_one = $this->input->post('who_help_one');
+			$smi = $this->input->post('smi');
+			$photo = $this->input->post('photo');
+			$video = $this->input->post('video');
+			
+			//$images = $this->input->post('upload');
+			$login = $this->session->userdata('prop_login');
+			$date = date("d.m.y"); 
+			$newdata = array(
+						   'prop_categorynews' => $shares,
+						   'prop_categorynews' => $directions,
+						   'prop_namenews' =>  $namenews,
+						   'prop_images' =>  $images,
+						   'prop_login' =>  $login,
+						   'prop_text' =>  $textnews,
+						   'prop_date' =>  $date,
+					   );
 					   
 			$this->db->insert('prop_news',$newdata);
 			redirect('admin');
 		}
 		
-		function deletenews($id = '')
-		{
-			$this-> load-> helper('url');
-                $this-> load-> helper('form');
-				$this->load->library('session');
-				/*
-					Здесь добавить удаление новостей. 
-					1) Доавить кнопку или ссылку, а потом создать форму и перекидывать сюда.
-				*/
-		}
 		function donations() {
             $this->load->helper(array('form', 'url'));
             $this->load->library('session');
