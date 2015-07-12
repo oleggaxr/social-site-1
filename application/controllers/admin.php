@@ -215,8 +215,6 @@ class admin extends CI_Controller
         $data = array(
             'body' => $all
         );
-        //var_dump($a);
-        //exit;
         $this->db->update('prop_news', $data, array('id' => $id));
         redirect('admin');
     }

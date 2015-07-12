@@ -93,3 +93,6 @@
     color: #888888;
     font-style: italic;
 }
+#panel textarea {
+    max-height: 150px;
+}
