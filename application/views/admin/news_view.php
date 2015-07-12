@@ -1,5 +1,13 @@
-<div id="panel">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src='/js/jquery.autosize.min.js'></script>
+<script type="text/javascript">
+    $(function(){
+        $('textarea').autosize();
+    });
 
+</script>
+
+<div id="panel">
     <?php echo form_open_multipart('admin/addnews'); ?>
     <table>
         <tr>
@@ -7,7 +15,7 @@
                 <h3>Название статьи</h3>
             </td>
             <td>
-                <textarea name="namenews" cols="100"></textarea>
+                <textarea name="namenews" cols="80"></textarea>
             </td>
         </tr>
         <tr>
@@ -15,7 +23,7 @@
                 <h3>Содержание статьи</h3>
             </td>
             <td>
-                <textarea name="textnews" cols="100" rows="10"></textarea>
+                <textarea name="textnews" cols="80" rows="10"></textarea>
             </td>
         </tr>
         <tr>
@@ -60,11 +68,11 @@ foreach ($query->result() as $row) {
             <td width="80%">
                 <a href="#"><h3><?= $row->prop_namenews ?></h3></a>
                 <span class="date">10.10.2015</span>
-                <textarea cols="100" rows="15"><?= $row->prop_text ?></textarea>
+                <p><?= $row->prop_text ?></p>
             </td>
             <td width="5%">
                 <input type="button" value="Удалить">
-                <input type="button" value="Изменть">
+                <a href="#news_editor_<?= $row->id ?>">Изменить</a>
             </td>
         </table>
     </div>

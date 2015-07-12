@@ -153,9 +153,5 @@ class admin extends CI_Controller
 	function news() {
         self::index();
     }
-				
-		
-		
-
 }
 ?>
