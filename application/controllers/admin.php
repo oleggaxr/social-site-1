@@ -104,10 +104,15 @@ class admin extends CI_Controller
 			
 			//$images = $this->input->post('upload');
 			$login = $this->session->userdata('prop_login');
-			$date = date("d.m.y"); 
+			$date = date("d.m.y");
 			$newdata = array(
 						   'prop_categorynews' => $shares,
 						   'prop_categorynews' => $directions,
+						   'prop_categorynews' => $who_help,
+						   'prop_categorynews' => $who_help_one,
+						   'prop_categorynews' => $smi,
+						   'prop_categorynews' => $photo,
+						   'prop_categorynews' => $video,
 						   'prop_namenews' =>  $namenews,
 						   'prop_images' =>  $images,
 						   'prop_login' =>  $login,
@@ -163,28 +168,13 @@ class admin extends CI_Controller
 		
 		function newsupdate($id = "")
 		{
-				/* $a = $this->db->get('comments'); // получам комментарии из БД
-				foreach ($a->result() as $row)
-				{*/
-				
-					
 					$all = $this->input->post('textnews');
 					
-					var_dump($all);
-					exit;
-					
 					$data = array(
-						'body' => $all
+						'prop_text' => $all
 					);
-					//var_dump($a);
-					//exit;
-					$this->db->update('prop_news', $data, array('id' => $id)); 
+					$this->db->update('prop_news', $data, array('id' => $id));
 					redirect('admin');
-				//}	
-				
-					
-				
-				
 		}
 }
 ?>

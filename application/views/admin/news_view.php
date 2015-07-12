@@ -72,7 +72,7 @@ foreach ($query->result() as $row) {
             <td width="80%">
                 <a href="#"><h3><?= $row->prop_namenews ?></h3></a>
                 <span class="date">10.10.2015</span>
-				<?php echo form_open('admin/newsupdate'); ?>
+				<?php echo form_open('admin/newsupdate/'.$row->id); ?>
 				 <textarea name="textnews" style="width:800px;height:100px;" id="edit_<?=$row->id?>"><?= $row->prop_text ?></textarea>
                 <!--<p name = "textbd" onClick="toEdit()"><?= $row->prop_text ?></p>-->
             </td>
