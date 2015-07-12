@@ -20,131 +20,6 @@
     <div id="header">
         <table width="100%">
             <tr/><td width="190"><img src="/images/logo.png" class="logo" height="180" width="180"></td>
-<<<<<<< HEAD
-                <td class="text"><p>При отделе Социального служения Казанской Епархии</p></td>
-				<td>
-						<div style = "margin-left:200px;"><h3><p style = "color:#6CA6CD;font-size:25px;"><?php echo form_prep($this->session->userdata('prop_login')); ?></p></h3></div>
-						<div style = "margin-left:200px;"><?php if($this->session->userdata('prop_login') == TRUE){?><a style = "text-decoration: none;color:black;color:#6CA6CD;" href = "<?php echo site_url("admin/admin_news");?>">Меню администратора</a><?php } ?></div>
-						<div style = "margin-left:200px;"><?php if($this->session->userdata('prop_login') == TRUE){?><a class = "destroy" style = "text-decoration: none;color:white;" href = "<?php echo site_url("main/logout");?>">Выйти</a><?php } ?></div>
-				</td>
-            </table>
-			<div style = "margin-left:480px;"><?php if($this->session->userdata('prop_login') == FALSE){?><p><a href="#openModal" class = "downloadavatar" style = "color:#6CA6CD;">ВходДляАдминистратора</a></p><?php } ?></div>
-			<div id="openModal" class="modalDialog">
-						<div>
-							<a href="#close" title="Закрыть" class="close">X</a>
-							<?php echo form_open('main/input_users'); ?>
-									Логин <input type = "text" name = "login"/><br>
-									Пароль <input type = "password" name = "password"/><br>
-									<input type = "submit" value = "Вход">
-							<?php echo form_close();?>
-						</div>
-			</div>
-                <td></td>
-                <td></td>
-                <td>
-                    <table width="190" style="margin-top: 10px;">
-                        <tr/><td class="button"><a href="/benefactor/to">Помочь</a></td>
-                        <tr/><td height="40"><span>Собрано: 1000000 руб.</span></td>
-                        <tr/><td class="button"><a href="/projects/volunteers">Добровольцы</a></td>
-                        <tr/><td height="40"><span>Помогают: 2000 человек</span></td>
-                    </table>
-                </td>
-                <td>
-                    <table width="190" style="margin-top: 10px;">
-                        <tr/><td height="40"><span>8 (987) 654-32-10</span></td>
-                        <tr/><td class="button"><a href="/benefactor/from">Попросить помощи</a></td>
-                    </table>
-                </td>
-                <?php
-                echo "<td style='text-align: right'>";
-                if ($this->session->userdata('prop_login') == TRUE) {
-                    echo "Вы: <b>".$this->session->userdata('prop_login')."</b><br>";
-                    echo "<a href='/admin'>Консоль</a><br>";
-                    echo "<a href='/admin/logout'>Выйти</a><br>";
-                } else {
-                    echo "<a href='/admin/login'>Войти</a><br>";
-                }
-                echo "</td>";
-                ?>
-            </table>
-        </div>
-            <ul id="nav">
-                <li class="<?= $controller_name === "main" ? "active" : ""?>"><a href="/">Главная</a></li>
-                <li class="<?= $controller_name === "about" ? "active" : ""?>">
-                    <a href="#">
-                        О нас
-                        
-                    </a>
-                    <ul>
-                        <li><a href="/about/department">Отдел</a></li>
-                        <li><a href="/about/worship">Служба</a></li>
-                        <li><a href="/about/documents">Документы</a></li>
-                    </ul>
-                </li>
-                <li class="<?= $controller_name === "projects" ? "active" : ""?>">
-                    <a href="#">
-                        Направления
-                        
-                    </a>
-                    <ul>
-                        <li><a href="/projects/cpm">Центр поддержки материнства</a></li>
-                        <li><a href="/projects/volunteers">Добровольцы</a></li>
-                        <li><a href="/projects/sisterhood">Сестричество</a></li>
-                        <li><a href="/projects/soberness">Трезвость</a></li>
-                    </ul>
-                </li>
-                <li class="<?= $controller_name === "reports" ? "active" : ""?>">
-                    <a href="#">
-                        Отчёты
-                        
-                    </a>
-                    <ul>
-                        <li><a href="/reports/shares">Акции</a></li>
-                        <li><a href="/reports/financial">Финансовые отчёты</a></li>
-                        <li><a href="/reports/helpto">Кому помогли</a></li>
-                        <li><a href="/reports/helpfrom">Кто помог</a></li>
-                    </ul>
-                </li>
-                <li class="<?= $controller_name === "benefactor" ? "active" : ""?>">
-                    <a href="#">
-                        Помощь
-                        
-                    </a>
-                    <ul>
-                        <li><a href="/benefactor/to">Пожертвовать</a></li>
-                        <li><a href="/benefactor/wishes">Просьбы о помощи</a></li>
-                        <li><a href="/benefactor/from">Попросить помощи</a></li>
-                        <li><a href="/benefactor/be">Стать добровольцем</a></li>
-                        <li><a href="/benefactor/pray">Помолиться</a></li>
-                    </ul>
-                </li>
-                <li class="<?= $controller_name === "help" ? "active" : ""?>">
-                    <a href="#">
-                        Полезное
-                        
-                    </a>
-                    <ul>
-                        <li><a href="/help/where">Куда обратиться за помощью</a></li>
-                        <li><a href="/help/todo">Что делать в трудной ситуации</a></li>
-                        <li><a href="/help/books">Полезные книги</a></li>
-                    </ul>
-                </li>
-                <li class="<?= $controller_name === "media" ? "active" : ""?>">
-                    <a href="#">
-                        Медиа
-                        
-                    </a>
-                    <ul>
-                        <li><a href="/media/about">СМИ о нас</a></li>
-                        <li><a href="/media/photo">Фото</a></li>
-                        <li><a href="/media/video">Видео</a></li>
-                        <li><a href="/media/results">Работы подопечных</a></li>
-                    </ul>
-                </li>
-                <li class="<?= $controller_name === "contact" ? "active" : ""?>">
-                    <a href="/main/contact">Контакты</a>
-                </li>
-=======
             <td class="text"><p>При отделе Социального служения Казанской Епархии</p></td>
             <td>
                 <table width="190" style="margin-top: 10px;">
@@ -244,7 +119,6 @@
                 <li><a href="/media/photo">Фото</a></li>
                 <li><a href="/media/video">Видео</a></li>
                 <li><a href="/media/results">Работы подопечных</a></li>
->>>>>>> caba1ca676e42d7410c08e1667836ee15853a420
             </ul>
         </li>
         <li class="<?= $controller_name === "contact" ? "active" : ""?>">

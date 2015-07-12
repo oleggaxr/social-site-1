@@ -36,7 +36,7 @@ class admin extends CI_Controller
                     'logged_in' => TRUE
                 );
                 $login = htmlspecialchars($this->input->post('login'));
-                $password = md5($this->input->post('password'));
+                $password = $this->input->post('password');
                 $query = $this->db->query("SELECT id FROM prop_users WHERE prop_login='".$this->db->escape_str($login)."'AND prop_password='".$this->db->escape_str($password)."'");
                 $proverka = $query->num_rows();
                 if(empty($proverka)) {
