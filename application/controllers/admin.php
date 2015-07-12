@@ -17,6 +17,7 @@ class admin extends CI_Controller
         {
             $data['section'] = "news";
             $this->load->view('admin/header', $data);
+            $this->load->view('admin/news_add');
             $this->load->view('admin/news_view');
             $this->load->view('admin/footer');
         }
