@@ -69,6 +69,9 @@
 #panel {
     margin: 15px;
 }
+#panel h3 {
+     text-align: right;
+ }
 #panel table {
     width: 100%;
 }
@@ -81,4 +84,9 @@
     -webkit-box-shadow: inset 0px 0px 24px 8px rgba(193,191,255,0.55);
     -moz-box-shadow: inset 0px 0px 24px 8px rgba(193,191,255,0.55);
     box-shadow: inset 0px 0px 24px 8px rgba(193,191,255,0.55);
+}
+.date{
+    font-size: 10pt;
+    color: #888888;
+    font-style: italic;
 }
