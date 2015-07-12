@@ -50,6 +50,31 @@
             </td>
         </tr>
     </table>
+
+    <script type="text/javascript" src="/plupload-2.1.7/js/plupload.full.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/plupload-2.1.7/js/jquery.plupload.queue/jquery.plupload.queue.min.js" charset="UTF-8"></script>
+    <link type="text/css" rel="stylesheet" href="/plupload-2.1.7/js/jquery.plupload.queue/css/jquery.plupload.queue.css" media="screen" />
+
+    <h3>Загрузка фотографий</h3>
+    <div id="html4_uploader">Your browser doesn't have HTML 4 support.</div>
+    <script type="text/javascript">
+        $(function() {
+            // Setup html4 version
+            $("#html4_uploader").pluploadQueue({
+                // General settings
+                runtimes : 'html4',
+                url : "/examples/upload.php",
+                unique_names : true,
+
+                filters : {
+                    mime_types: [
+                        {title : "Image files", extensions : "jpg,gif,png"},
+                        {title : "Zip files", extensions : "zip"}
+                    ]
+                }
+            });
+        });
+    </script>
     <input type="submit" value="Доавить статью" style="margin-top:10px;"/>
 
     <?php echo form_close(); ?>
