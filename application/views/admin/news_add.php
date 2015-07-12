@@ -50,11 +50,6 @@
             </td>
         </tr>
     </table>
-
-    <script type="text/javascript" src="/plupload-2.1.7/js/plupload.full.min.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="/plupload-2.1.7/js/jquery.plupload.queue/jquery.plupload.queue.min.js" charset="UTF-8"></script>
-    <link type="text/css" rel="stylesheet" href="/plupload-2.1.7/js/jquery.plupload.queue/css/jquery.plupload.queue.css" media="screen" />
-
     <h3>Загрузка фотографий</h3>
     <input type="submit" value="Доавить статью" style="margin-top:10px;"/>
 

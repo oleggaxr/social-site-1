@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src='/js/jquery.autosize.min.js'></script>
 <script src='/js/changetext.js'></script>
@@ -60,6 +61,8 @@
 
     <?php echo form_close(); ?>
 </div>
+=======
+>>>>>>> 94c3d7c0f3a7ad213b692086e2a35ed6500d231a
 <?php
 //$this->db->select(('prop_text', 1, 30), 'prop_namenews','prop');
 $query = $this->db->get('prop_news');
@@ -70,16 +73,13 @@ foreach ($query->result() as $row) {
             <tr/>
             <td width="15%"><img height="100" width="140" src="<?= base_url() . 'images/' . $row->prop_images ?>"></td>
             <td width="80%">
-                <a href="#"><h3><?= $row->prop_namenews ?></h3></a>
-                <span class="date">10.10.2015</span>
-				<?php echo form_open('admin/newsupdate'); ?>
-				 <textarea name="textnews" style="width:800px;height:100px;" id="edit_<?=$row->id?>"><?= $row->prop_text ?></textarea>
-                <!--<p name = "textbd" onClick="toEdit()"><?= $row->prop_text ?></p>-->
+                <h3><a href="#"><?= $row->prop_namenews ?></a></h3>
+                <span class="date"><?= $row->prop_date ?></span>
+                <p><?= $row->prop_text ?></p>
             </td>
             <td width="5%">
-                <a class = "delete"href = "<?php echo base_url('admin/delete/'.$row->id)?>" onclick = "return confirm('Вы действительно хотите удалить?')">Удалить</a>
-				<input type = "submit" value = "Изменить"  href = "<? echo base_url('admin/newsupdate/'.$row->id)?>"/>
-				<?php echo form_close(); ?>
+                <a href="/admin/newsdelete/<?= $row->id ?>">Удалить</a>
+                <a href="#news_editor_<?= $row->id ?>">Изменить</a>
             </td>
         </table>
     </div>
