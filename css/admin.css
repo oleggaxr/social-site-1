@@ -68,9 +68,12 @@
 */
 #panel {
     margin: 15px;
+    -webkit-box-shadow: inset 0px 0px 166px 1px rgba(191,255,217,1);
+    -moz-box-shadow: inset 0px 0px 166px 1px rgba(191,255,217,1);
+    box-shadow: inset 0px 0px 166px 1px rgba(191,255,217,1);
 }
 #panel h3 {
-     text-align: right;
+     text-align: left;
  }
 #panel table {
     width: 100%;

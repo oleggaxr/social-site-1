@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src='/js/jquery.autosize.min.js'></script>
-<script src='/js/changetext.js'></script>
 <script type="text/javascript">
     $(function(){
         $('textarea').autosize();
@@ -49,50 +47,36 @@
             <td>
                 <p>Загрузить картинку</p>
                 <input type="file" name="upload">
-
             </td>
         </tr>
     </table>
+
+    <script type="text/javascript" src="/plupload-2.1.7/js/plupload.full.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/plupload-2.1.7/js/jquery.plupload.queue/jquery.plupload.queue.min.js" charset="UTF-8"></script>
+    <link type="text/css" rel="stylesheet" href="/plupload-2.1.7/js/jquery.plupload.queue/css/jquery.plupload.queue.css" media="screen" />
+
+    <h3>Загрузка фотографий</h3>
+    <div id="html4_uploader">Your browser doesn't have HTML 4 support.</div>
+    <script type="text/javascript">
+        $(function() {
+            // Setup html4 version
+            $("#html4_uploader").pluploadQueue({
+                // General settings
+                runtimes : 'html4',
+                url : "/examples/upload.php",
+                unique_names : true,
+
+                filters : {
+                    mime_types: [
+                        {title : "Image files", extensions : "jpg,gif,png"},
+                        {title : "Zip files", extensions : "zip"}
+                    ]
+                }
+            });
+        });
+    </script>
     <input type="submit" value="Доавить статью" style="margin-top:10px;"/>
 
     <?php echo form_close(); ?>
 
 </div>
-=======
->>>>>>> 74c517bf730e03defb001031bf4982abece53f87
-<?php
-//$this->db->select(('prop_text', 1, 30), 'prop_namenews','prop');
-$query = $this->db->get('prop_news');
-foreach ($query->result() as $row) {
-    ?>
-    <div class="news">
-        <table>
-            <tr/>
-            <td width="15%"><img height="100" width="140" src="<?= base_url() . 'images/' . $row->prop_images ?>"></td>
-            <td width="80%">
-<<<<<<< HEAD
-                <a href="#"><h3><?= $row->prop_namenews ?></h3></a>
-                <span class="date">10.10.2015</span>
-				<?php echo form_open('admin/newsupdate'); ?>
-				 <textarea name="textnews" style="width:800px;height:100px;" id="edit_<?=$row->id?>"><?= $row->prop_text ?></textarea>
-                <!--<p name = "textbd" onClick="toEdit()"><?= $row->prop_text ?></p>-->
-            </td>
-            <td width="5%">
-                <a class = "delete"href = "<?php echo base_url('admin/delete/'.$row->id)?>" onclick = "return confirm('Вы действительно хотите удалить?')">Удалить</a>
-				<input type = "submit" value = "Изменить"  href = "<? echo base_url('admin/newsupdate/'.$row->id)?>"/>
-				<?php echo form_close(); ?>
-=======
-                <h3><a href="#"><?= $row->prop_namenews ?></a></h3>
-                <span class="date"><?= $row->prop_date ?></span>
-                <p><?= $row->prop_text ?></p>
-            </td>
-            <td width="5%">
-                <a href="/admin/deletenews/<?= $row->id ?>">Удалить</a>
-                <a href="#news_editor_<?= $row->id ?>">Изменить</a>
->>>>>>> 74c517bf730e03defb001031bf4982abece53f87
-            </td>
-        </table>
-    </div>
-<?php
-}
-?>
