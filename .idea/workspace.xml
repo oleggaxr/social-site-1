@@ -2,89 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fe735ba-05e8-410f-a88a-8173caf5496c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/examples/custom.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/examples/dump.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/examples/events.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/examples/jquery/all_runtimes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/examples/jquery/jquery_ui_widget.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/examples/jquery/queue_widget.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/examples/jquery/s3.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/examples/upload.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/Moxie.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/Moxie.xap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/ar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/az.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/bg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/bs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/cy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/et.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/fa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/he.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/hy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/id.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/ka.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/kk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/km.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/ko.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/ku_IQ.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/lt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/lv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/mn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/ms.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/pt_BR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/ro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/sq.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/sr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/sr_RS.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/th_TH.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/uk_UA.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/vi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/zh_CN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/i18n/zh_TW.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/jquery.plupload.queue/css/jquery.plupload.queue.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/jquery.plupload.queue/img/backgrounds.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/jquery.plupload.queue/img/buttons-disabled.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/jquery.plupload.queue/img/buttons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/jquery.plupload.queue/img/delete.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/jquery.plupload.queue/img/done.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/jquery.plupload.queue/img/error.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/jquery.plupload.queue/img/throbber.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/jquery.plupload.queue/img/transp50.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/jquery.plupload.queue/jquery.plupload.queue.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/jquery.plupload.queue/jquery.plupload.queue.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/jquery.ui.plupload/css/jquery.ui.plupload.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/jquery.ui.plupload/img/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/jquery.ui.plupload/img/plupload.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/jquery.ui.plupload/jquery.ui.plupload.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/jquery.ui.plupload/jquery.ui.plupload.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/moxie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/moxie.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/plupload.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/plupload.full.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/js/plupload.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/license.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plupload-2.1.7/readme.md" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/database.php" afterPath="$PROJECT_DIR$/application/config/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/news_add.php" afterPath="$PROJECT_DIR$/application/views/admin/news_add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/admin.css" afterPath="$PROJECT_DIR$/css/admin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/admin.php" afterPath="$PROJECT_DIR$/application/controllers/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/main_view.php" afterPath="$PROJECT_DIR$/application/views/main_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/news_view.php" afterPath="$PROJECT_DIR$/application/views/admin/news_view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="social-site-1.iws" />
@@ -116,7 +37,7 @@
             <state vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="2394">
               <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="11" selection-end-column="48" />
               <folding>
-                <marker date="1436624442816" expanded="true" signature="1775:1792" placeholder="..." />
+                <marker date="1436704506000" expanded="true" signature="1775:1792" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -135,21 +56,19 @@
       <file leaf-file-name="news_view.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/admin/news_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="504">
-              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="12" selection-end-column="45" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="504">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news_add.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/views/admin/news_add.php">
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/config/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8780488" vertical-offset="756" max-vertical-offset="2682">
-              <caret line="70" column="78" selection-start-line="70" selection-start-column="78" selection-end-line="70" selection-end-column="81" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.29471892" vertical-offset="763" max-vertical-offset="1350">
+              <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -167,10 +86,10 @@
       <file leaf-file-name="admin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.333333" vertical-offset="1782" max-vertical-offset="2952">
-              <caret line="122" column="31" selection-start-line="122" selection-start-column="31" selection-end-line="122" selection-end-column="31" />
+            <state vertical-scroll-proportion="-16.592592" vertical-offset="2846" max-vertical-offset="3438">
+              <caret line="183" column="9" selection-start-line="183" selection-start-column="9" selection-end-line="183" selection-end-column="9" />
               <folding>
-                <marker date="1436697075673" expanded="true" signature="1355:1489" placeholder="SELECT id FR..prop_users..." />
+                <marker date="1436705508433" expanded="true" signature="1364:1498" placeholder="SELECT id FR..prop_users..." />
               </folding>
             </state>
           </provider>
@@ -194,7 +113,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/config/database.php" />
         <option value="$PROJECT_DIR$/application/views/donations_panel_horizontal.php" />
         <option value="$PROJECT_DIR$/application/views/donations_panel_vertical.php" />
         <option value="$PROJECT_DIR$/css/main.css" />
@@ -206,10 +124,11 @@
         <option value="$PROJECT_DIR$/css/admin.css" />
         <option value="$PROJECT_DIR$/application/views/admin/file_upload_widget.php" />
         <option value="$PROJECT_DIR$/application/views/admin/add_news.php" />
-        <option value="$PROJECT_DIR$/application/controllers/admin.php" />
         <option value="$PROJECT_DIR$/application/views/admin/news_view.php" />
         <option value="$PROJECT_DIR$/application/views/main_view.php" />
         <option value="$PROJECT_DIR$/application/views/admin/news_add.php" />
+        <option value="$PROJECT_DIR$/application/config/database.php" />
+        <option value="$PROJECT_DIR$/application/controllers/admin.php" />
       </list>
     </option>
   </component>
@@ -245,7 +164,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -364,16 +282,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -481,7 +396,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2394">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1436624442816" expanded="true" signature="1775:1792" placeholder="..." />
+            <marker date="1436704506000" expanded="true" signature="1775:1792" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -515,7 +430,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="2394">
           <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
           <folding>
-            <marker date="1436624442816" expanded="true" signature="1775:1792" placeholder="..." />
+            <marker date="1436704506000" expanded="true" signature="1775:1792" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -541,7 +456,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1152" max-vertical-offset="2376">
           <caret line="64" column="27" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
           <folding>
-            <marker date="1436697075673" expanded="true" signature="1355:1489" placeholder="SELECT id FR..prop_users..." />
+            <marker date="1436705508433" expanded="true" signature="1364:1498" placeholder="SELECT id FR..prop_users..." />
           </folding>
         </state>
       </provider>
@@ -551,7 +466,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2394">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1436624442816" expanded="true" signature="1775:1792" placeholder="..." />
+            <marker date="1436704506000" expanded="true" signature="1775:1792" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -582,6 +497,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="477" max-vertical-offset="1350">
           <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -590,7 +506,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1152" max-vertical-offset="2376">
           <caret line="64" column="27" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
           <folding>
-            <marker date="1436697075673" expanded="true" signature="1355:1489" placeholder="SELECT id FR..prop_users..." />
+            <marker date="1436705508433" expanded="true" signature="1364:1498" placeholder="SELECT id FR..prop_users..." />
           </folding>
         </state>
       </provider>
@@ -610,7 +526,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2394">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1436624442816" expanded="true" signature="1775:1792" placeholder="..." />
+            <marker date="1436704506000" expanded="true" signature="1775:1792" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -641,6 +557,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="477" max-vertical-offset="1350">
           <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -649,7 +566,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="738" max-vertical-offset="1962">
           <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
           <folding>
-            <marker date="1436697075673" expanded="true" signature="1355:1489" placeholder="SELECT id FR..prop_users..." />
+            <marker date="1436705508433" expanded="true" signature="1364:1498" placeholder="SELECT id FR..prop_users..." />
           </folding>
         </state>
       </provider>
@@ -659,7 +576,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1462" max-vertical-offset="2394">
           <caret line="124" column="47" selection-start-line="124" selection-start-column="47" selection-end-line="124" selection-end-column="47" />
           <folding>
-            <marker date="1436624442816" expanded="true" signature="1775:1792" placeholder="..." />
+            <marker date="1436704506000" expanded="true" signature="1775:1792" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -690,6 +607,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="477" max-vertical-offset="1350">
           <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -698,7 +616,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="738" max-vertical-offset="1962">
           <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
           <folding>
-            <marker date="1436697075673" expanded="true" signature="1355:1489" placeholder="SELECT id FR..prop_users..." />
+            <marker date="1436705508433" expanded="true" signature="1364:1498" placeholder="SELECT id FR..prop_users..." />
           </folding>
         </state>
       </provider>
@@ -724,13 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="3024">
           <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.241908" vertical-offset="477" max-vertical-offset="1350">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -788,13 +699,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="306">
           <caret line="2" column="80" selection-start-line="2" selection-start-column="80" selection-end-line="2" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.autosize.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="601">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -814,36 +719,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/admin/news.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06132879" vertical-offset="0" max-vertical-offset="587">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/admin.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1132" max-vertical-offset="1800">
           <caret line="79" column="1" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.333333" vertical-offset="1782" max-vertical-offset="2952">
-          <caret line="122" column="31" selection-start-line="122" selection-start-column="31" selection-end-line="122" selection-end-column="31" />
-          <folding>
-            <marker date="1436697075673" expanded="true" signature="1355:1489" placeholder="SELECT id FR..prop_users..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/news_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="504">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="12" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -853,7 +732,7 @@
         <state vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="2394">
           <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="11" selection-end-column="48" />
           <folding>
-            <marker date="1436624442816" expanded="true" signature="1775:1792" placeholder="..." />
+            <marker date="1436704506000" expanded="true" signature="1775:1792" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -866,13 +745,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/news_add.php">
+    <entry file="file://$PROJECT_DIR$/application/views/admin/news_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8780488" vertical-offset="756" max-vertical-offset="2682">
-          <caret line="70" column="78" selection-start-line="70" selection-start-column="78" selection-end-line="70" selection-end-column="81" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="574">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.592592" vertical-offset="2846" max-vertical-offset="3438">
+          <caret line="183" column="9" selection-start-line="183" selection-start-column="9" selection-end-line="183" selection-end-column="9" />
           <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1436705508433" expanded="true" signature="1364:1498" placeholder="SELECT id FR..prop_users..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29471892" vertical-offset="763" max-vertical-offset="1350">
+          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
