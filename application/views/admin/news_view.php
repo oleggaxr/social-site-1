@@ -13,7 +13,7 @@ foreach ($query->result() as $row) {
                 <p><?= $row->prop_text ?></p>
             </td>
             <td width="5%">
-                <a href="/admin/deletenews/<?= $row->id ?>">Удалить</a>
+                <a href="/admin/newsdelete/<?= $row->id ?>">Удалить</a>
                 <a href="#news_editor_<?= $row->id ?>">Изменить</a>
             </td>
         </table>

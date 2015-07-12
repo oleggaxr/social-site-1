@@ -112,15 +112,12 @@ class admin extends CI_Controller
 			redirect('admin');
 		}
 		
-		function deletenews($id = '')
+		function newsdelete($id = '')
 		{
 			$this-> load-> helper('url');
                 $this-> load-> helper('form');
 				$this->load->library('session');
-				/*
-					Здесь добавить удаление новостей. 
-					1) Доавить кнопку или ссылку, а потом создать форму и перекидывать сюда.
-				*/
+            $this->db->delete('prop_news', array('id' => $id));
             redirect("/admin");
 		}
 		function donations() {
@@ -156,31 +153,26 @@ class admin extends CI_Controller
 	function news() {
         self::index();
     }
-    function delete($id = "")
-		{
-			$this->db->delete('prop_news', array('id' => $id)); 
-			redirect('admin');
-		}
 		
-		function newsupdate($id = "")
-        {
-            /* $a = $this->db->get('comments'); // получам комментарии из БД
-            foreach ($a->result() as $row)
-            {*/
+    function newsupdate($id = "")
+    {
+        /* $a = $this->db->get('comments'); // получам комментарии из БД
+        foreach ($a->result() as $row)
+        {*/
 
 
-            $all = $this->input->post('textnews');
+        $all = $this->input->post('textnews');
 
-            var_dump($all);
-            exit;
+        var_dump($all);
+        exit;
 
-            $data = array(
-                'body' => $all
-            );
-            //var_dump($a);
-            //exit;
-            $this->db->update('prop_news', $data, array('id' => $id));
-            redirect('admin');
-        }
+        $data = array(
+            'body' => $all
+        );
+        //var_dump($a);
+        //exit;
+        $this->db->update('prop_news', $data, array('id' => $id));
+        redirect('admin');
+    }
 }
 ?>
