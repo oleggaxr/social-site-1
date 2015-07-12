@@ -176,8 +176,31 @@ class admin extends CI_Controller
 					$this->db->update('prop_news', $data, array('id' => $id));
 					redirect('admin');
 		}
+<<<<<<< HEAD
 		
 		
 		
+=======
+=======
+    function newsupdate($id = "")
+    {
+        /* $a = $this->db->get('comments'); // получам комментарии из БД
+        foreach ($a->result() as $row)
+        {*/
+
+
+        $all = $this->input->post('textnews');
+
+        var_dump($all);
+        exit;
+
+        $data = array(
+            'body' => $all
+        );
+        $this->db->update('prop_news', $data, array('id' => $id));
+        redirect('admin');
+    }
+>>>>>>> 04ee67479823d1a33ebd2a1688cafda89ce2b8fb
+>>>>>>> ef32151293ed659167fc799edfe1f4a8b123b22e
 }
 ?>
