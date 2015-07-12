@@ -18,7 +18,6 @@ class admin extends CI_Controller
         {
             $data['section'] = "news";
             $this->load->view('admin/header', $data);
-            $this->load->view('admin/news_add');
             $this->load->view('admin/news_view');
             $this->load->view('admin/footer');
         }
@@ -121,7 +120,6 @@ class admin extends CI_Controller
 					Здесь добавить удаление новостей. 
 					1) Доавить кнопку или ссылку, а потом создать форму и перекидывать сюда.
 				*/
-            redirect("/admin");
 		}
 		function donations() {
             $this->load->helper(array('form', 'url'));
